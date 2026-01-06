@@ -3,6 +3,7 @@ import {CancelTransactionUseCase} from "../../core/use-cases/cancel-transaction.
 import {useCallback, useEffect, useState} from "react";
 import type {Transaction} from "../../core/domain/entities/transaction.ts";
 import {RetryTransactionUseCase} from "../../core/use-cases/retry-transaction.ts";
+import {MockTransactionRepository} from "../../infrastructure/repositories/mock-transaction.ts";
 
 interface UseTransactionDetailResult {
     transaction: Transaction | null;
@@ -14,6 +15,8 @@ interface UseTransactionDetailResult {
     cancel: () => Promise<void>;
     refresh: () => void;
 }
+
+const repository = new MockTransactionRepository();
 
 const detailUseCase = new GetTransactionDetailUseCase(repository);
 const retryUseCase = new RetryTransactionUseCase(repository);
