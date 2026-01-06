@@ -1,0 +1,1 @@
+export { mockTransactions } from '../../scripts/generate-mock-data';
