@@ -108,10 +108,6 @@ const DashboardPage: React.FC<{ onLogout: () => void; isDark: boolean; toggleThe
         document.documentElement.classList.toggle('dark', isDark);
     }, [isDark]);
 
-    // Simuler une déconnexion
-    const handleLogout = () => {
-        setIsAuthenticated(false);
-    };
 
     if (!isAuthenticated) {
         return (
