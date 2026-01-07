@@ -7,7 +7,7 @@ import {TransactionTable} from "../components/transactions/TransactionTable.tsx"
 import {TransactionDetail} from "../components/transactions/TransactionDetail.tsx";
 
 
-interface DashboardPageProps {
+interface TransactionTabProps {
     isDark: boolean;
     onToggleTheme: () => void;
     onLogout: () => void;
@@ -28,7 +28,7 @@ const DottedBackground: React.FC<{ isDark: boolean }> = ({ isDark }) => (
     </div>
 );
 
-export const DashboardPage: React.FC<DashboardPageProps> = ({
+export const TransactionTab: React.FC<TransactionTabProps> = ({
                                                                 isDark
                                                             }) => {
     const {
