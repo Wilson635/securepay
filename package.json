@@ -8,19 +8,28 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate:mock": "tsx src/scripts/generate-mock-data.ts"
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\"",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "type-check": "tsc --noEmit",
+    "generate:mock": "tsx scripts/generate-mock-data.ts"
   },
   "dependencies": {
     "@faker-js/faker": "^10.2.0",
     "@formkit/auto-animate": "^0.9.0",
     "@tailwindcss/vite": "^4.1.18",
+    "@vitest/ui": "^4.0.16",
     "framer-motion": "^12.24.7",
     "lucide-react": "^0.562.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-hot-toast": "^2.6.0",
     "recharts": "^3.6.0",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "vitest": "^4.0.16"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

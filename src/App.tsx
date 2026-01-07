@@ -258,12 +258,6 @@ export default function App() {
                                         Gérez votre contenu et suivez l'activité de votre plateforme de paiement depuis votre tableau de bord
                                     </p>
                                 </div>
-
-                                <select className="px-4 py-2 bg-white/10 backdrop-blur-sm text-white border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50">
-                                    <option>Mars 2025</option>
-                                    <option>Février 2025</option>
-                                    <option>Janvier 2025</option>
-                                </select>
                             </div>
 
                             {/* Quick Stats in Header */}
